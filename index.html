@@ -15,29 +15,45 @@
   <body>
     <header class="container mx-auto">
       <!-- ---------------------navbar-------------------- -->
-      <div class="navbar bg-base-100">
-        <div class="navbar-start">
-          <div class="dropdown">
-            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-5 w-5"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
+      <div>
+        <div class="navbar bg-base-100">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
               >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M4 6h16M4 12h8m-8 6h16"
-                />
-              </svg>
+                <li><a href="#" class="hover:text-[#ff4240]">Home</a></li>
+                <li><a href="#" class="hover:text-[#ff4240]">About</a></li>
+                <li><a href="#" class="hover:text-[#ff4240]">Pages</a></li>
+                <li><a href="#" class="hover:text-[#ff4240]">Blog</a></li>
+                <li><a href="#" class="hover:text-[#ff4240]">Contact</a></li>
+              </ul>
             </div>
-            <ul
-              tabindex="0"
-              class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+            <a
+              class="text-2xl md:text-4xl lg:text-4xl font-extrabold"
+              href="index.html"
+              >Hockey<span class="primery-color">’</span>s</a
             >
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
               <li><a href="#" class="hover:text-[#ff4240]">Home</a></li>
               <li><a href="#" class="hover:text-[#ff4240]">About</a></li>
               <li><a href="#" class="hover:text-[#ff4240]">Pages</a></li>
@@ -45,26 +61,73 @@
               <li><a href="#" class="hover:text-[#ff4240]">Contact</a></li>
             </ul>
           </div>
-          <a
-            class="text-2xl md:text-4xl lg:text-4xl font-extrabold"
-            href="index.html"
-            >Hockey<span class="primery-color">’</span>s</a
-          >
+          <div class="navbar-end gap-4">
+            <img src="icon/serch.svg" alt="" />
+            <a class="btn bg-[#ff4240] text-white font-bold hover:bg-red-500"
+              >Get Ticket</a
+            >
+          </div>
         </div>
-        <div class="navbar-center hidden lg:flex">
-          <ul class="menu menu-horizontal px-1">
-            <li><a href="#" class="hover:text-[#ff4240]">Home</a></li>
-            <li><a href="#" class="hover:text-[#ff4240]">About</a></li>
-            <li><a href="#" class="hover:text-[#ff4240]">Pages</a></li>
-            <li><a href="#" class="hover:text-[#ff4240]">Blog</a></li>
-            <li><a href="#" class="hover:text-[#ff4240]">Contact</a></li>
-          </ul>
+      </div>
+      <!-- ---------------------slider-------------------- -->
+      <div class="lg:relative">
+        <div class="carousel w-full h-[80vh] rounded-lg">
+          <div id="slide1" class="carousel-item relative w-full">
+            <img src="images/banner-1.png" class="w-full" />
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide4" class="btn btn-circle">❮</a>
+              <a href="#slide2" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+          <div id="slide2" class="carousel-item relative w-full">
+            <img
+              src="https://daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.jpg"
+              class="w-full"
+            />
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide1" class="btn btn-circle">❮</a>
+              <a href="#slide3" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+          <div id="slide3" class="carousel-item relative w-full">
+            <img
+              src="https://daisyui.com/images/stock/photo-1414694762283-acccc27bca85.jpg"
+              class="w-full"
+            />
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide2" class="btn btn-circle">❮</a>
+              <a href="#slide4" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+          <div id="slide4" class="carousel-item relative w-full">
+            <img
+              src="https://daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.jpg"
+              class="w-full"
+            />
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide3" class="btn btn-circle">❮</a>
+              <a href="#slide1" class="btn btn-circle">❯</a>
+            </div>
+          </div>
         </div>
-        <div class="navbar-end gap-4">
-          <img src="icon/serch.svg" alt="" />
-          <a class="btn bg-[#ff4240] text-white font-bold hover:bg-red-500"
-            >Get Ticket</a
-          >
+        <div
+          class="bg-[#131318] text-white p-8 rounded-2xl lg:w-[510px] lg:absolute right-[32px] top-[280px] space-y-2 md:space-y-4 lg:space-y-4"
+        >
+          <h3 class="text-lg md:text-2xl lg:text-2xl font-bold">
+            Meet all the heroes from the field
+          </h3>
+          <p class="text-sm md:text-base lg:text-base">
+            Dit amet consectetur. Condimentum dignissim adipiscing aliquam
+            <br />turpis placerat dolor. Purus urna in sit nullam proin.
+          </p>
         </div>
       </div>
     </header>
