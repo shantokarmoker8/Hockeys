@@ -15,3 +15,15 @@ body {
 .social-bg {
   background-color: rgba(19, 19, 24, 0.03);
 }
+.footer-bg {
+  background: #131318;
+}
+.phone-number-bg {
+  background: rgba(188, 237, 109, 0.1);
+}
+.email-bg {
+  background: rgba(253, 221, 95, 0.1);
+}
+.location-bg {
+  background: rgba(98, 156, 243, 0.1);
+}
