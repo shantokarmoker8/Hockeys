@@ -6,3 +6,6 @@ body {
 .primery-color {
   color: #ff4240;
 }
+.color-border {
+  color: rgba(19, 19, 24, 0.1);
+}
